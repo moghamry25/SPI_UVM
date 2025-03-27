@@ -1,0 +1,44 @@
+<certe_dump>
+  <instance type=" test_ram "> 
+     uvm_test_top 
+  
+     <instance type=" env_ram "> 
+        env 
+  
+        <instance type=" agent_ram "> 
+           agt_ram 
+  
+           <instance type=" driver_ram "> 
+              drv_ram 
+  
+              <port if_type = "uvm_analysis_port" txn_type = "anonymous"> 
+                 rsp_port 
+              </port> 
+  
+              <port if_type = "uvm_seq_item_pull_port" txn_type = "anonymous"> 
+                 seq_item_port 
+                 <connection>  uvm_test_top.env.agt_ram.seq_ram.seq_item_export  </connection> 
+              </port> 
+           </instance> 
+  
+  
+           <instance type=" sequencer_ram "> 
+              seq_ram 
+  
+              <export if_type = "uvm_analysis_export" txn_type = "anonymous"> 
+                 rsp_export 
+                 <connection>  uvm_test_top.env.agt_ram.seq_ram.sqr_rsp_analysis_fifo.analysis_export  </connection> 
+              </export> 
+  
+              <imp if_type = "uvm_seq_item_pull_imp" txn_type = "anonymous"> 
+                 seq_item_export 
+              </imp> 
+           </instance> 
+  
+        </instance> 
+  
+     </instance> 
+  
+  </instance> 
+  
+  </certe_dump>

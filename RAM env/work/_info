@@ -1,0 +1,607 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2021.1 2021.01, Jan 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/courses/Digital/Design/projects/Project 4 - UART/design_2
+T_opt
+Z2 !s11d using UVM/RAM 1 env/work 1 UVM/RAM 
+Z3 !s11d - 3 1 SPI 1 3 
+Z4 !s11d UVM/RAM env/work 1 interface_ram 1 D:/courses/Digital/Verification/Projects/Project 
+Z5 !s11d test_ram D:/courses/Digital/Verification/Projects/Project 3 3 1 D:/courses/Digital/Verification/Projects/Project SPI 1 D:/courses/Digital/Verification/Projects/Project using 1 D:/courses/Digital/Verification/Projects/Project 
+Z6 !s11d 3 SPI 3 using 1 SPI UVM/RAM 1 SPI env/work 1 SPI 
+Z7 !s11d using UVM/RAM 3 env/work 1 interface_ram 1 1 interface_ram D:/courses/Digital/Verification/Projects/Project 1 interface_ram 
+Z8 !s11d env/work driver_ram 3 D:/courses/Digital/Verification/Projects/Project 0 driver_ram 3 0 driver_ram SPI 0 driver_ram 
+Z9 !s11d D:/courses/Digital/Verification/Projects/Project - 3 SPI 0 - using 0 - UVM/RAM 0 - 
+Z10 !s11d interface_ram 1 0 
+Z11 !s11d env/work 1 0 
+Z12 !s11d using UVM/RAM 0 
+Z13 !s11d 3 SPI 0 
+Z14 !s11d config_ram D:/courses/Digital/Verification/Projects/Project 0 
+!s110 1742570771
+V11fS8_iFhIGU?RT1_I=l73
+04 7 4 work top_ram fast 0
+=3-28f10e4942ba-67dd8512-8a-56b4
+Z15 !s124 OEM100
+Z16 o-quiet -auto_acc_if_foreign -work work +acc
+Z17 tCvgOpt 0
+n@_opt
+Z18 OL;O;2021.1;73
+R1
+T_opt1
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+R11
+R12
+R13
+R14
+!s110 1743053938
+V>o>UK6;;6aT=9`Ec14TKP1
+04 14 4 work top_module_ram fast 0
+=1-28f10e4942ba-67e4e471-1a5-23e0
+R15
+R16
+R17
+n@_opt1
+R18
+Xagent_ram
+Z19 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z20 DXx6 mtiUvm 7 uvm_pkg 0 22 8V[`8]Q0W57le7Z>zYaAj1
+Z21 DXx4 work 10 config_ram 0 22 PkYFGfU>Sbg[WejR8QJQF3
+Z22 DXx4 work 16 sequnce_ram_item 0 22 Ka?hH?KH?SF_SAI2GQZO[0
+Z23 DXx4 work 10 driver_ram 0 22 Z`Y>c;Vh]`]HBNf7hOHa]3
+Z24 DXx4 work 13 sequencer_ram 0 22 ng6@k2M2cnK1`aP=R<OnW3
+Z25 !s110 1743053933
+!i10b 1
+!s100 hbVU9iUIoI5bA1HaNoB2]1
+ISVf<80]EJ;]BWG<RzVzjT1
+S1
+Z26 dD:/courses/Digital/Verification/Projects/Project - 3 SPI using UVM/RAM env
+w1743052338
+8agent_ram.sv
+Fagent_ram.sv
+Z27 FC:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/uvm_macros.svh
+Z28 FC:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_version_defines.svh
+Z29 FC:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_message_defines.svh
+Z30 FC:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_phase_defines.svh
+Z31 FC:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_object_defines.svh
+Z32 FC:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_printer_defines.svh
+Z33 FC:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_tlm_defines.svh
+Z34 FC:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_imps.svh
+Z35 FC:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_sequence_defines.svh
+Z36 FC:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_callback_defines.svh
+Z37 FC:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_reg_defines.svh
+Z38 FC:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_deprecated_defines.svh
+!i122 96
+Z39 L0 1 0
+VSVf<80]EJ;]BWG<RzVzjT1
+Z40 OL;L;2021.1;73
+r1
+!s85 0
+31
+Z41 !s108 1743053932.000000
+Z42 !s107 C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_deprecated_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_reg_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_callback_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_sequence_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_imps.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_tlm_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_printer_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_object_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_phase_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_message_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_version_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/uvm_macros.svh|top_module_ram.sv|test_ram.sv|env_ram.sv|agent_ram.sv|driver_ram.sv|sequencer_ram.sv|sequnce_ram.sv|sequnce_ram_item.sv|config_ram.sv|interface_ram.sv|ram.v|
+Z43 !s90 -reportprogress|300|-f|src_files.list|
+!i113 0
+Z44 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R17
+Xconfig_ram
+Z45 !s115 interface_ram
+R19
+R20
+R25
+!i10b 1
+!s100 S2E>]_I71GNKZmf`Njb=Y1
+IPkYFGfU>Sbg[WejR8QJQF3
+S1
+R26
+w1739621722
+8config_ram.sv
+Fconfig_ram.sv
+R27
+R28
+R29
+R30
+R31
+R32
+R33
+R34
+R35
+R36
+R37
+R38
+!i122 96
+R39
+VPkYFGfU>Sbg[WejR8QJQF3
+R40
+r1
+!s85 0
+31
+R41
+R42
+R43
+!i113 0
+R44
+R17
+Xdriver_ram
+R45
+R19
+R20
+R21
+R22
+R25
+!i10b 1
+!s100 ebjmeE1DXHR=fQ6ccMl4c0
+IZ`Y>c;Vh]`]HBNf7hOHa]3
+S1
+R26
+w1743053438
+8driver_ram.sv
+Fdriver_ram.sv
+R27
+R28
+R29
+R30
+R31
+R32
+R33
+R34
+R35
+R36
+R37
+R38
+!i122 96
+R39
+VZ`Y>c;Vh]`]HBNf7hOHa]3
+R40
+r1
+!s85 0
+31
+R41
+R42
+R43
+!i113 0
+R44
+R17
+Xenv_ram
+R19
+R20
+R21
+R22
+R23
+R24
+Z46 DXx4 work 9 agent_ram 0 22 SVf<80]EJ;]BWG<RzVzjT1
+R25
+!i10b 1
+!s100 e18I^Wn:FJIgB@gfC_2]O1
+IYg@`Im5<T]2YTooIQk?R=0
+S1
+R26
+w1742570766
+8env_ram.sv
+Fenv_ram.sv
+R27
+R28
+R29
+R30
+R31
+R32
+R33
+R34
+R35
+R36
+R37
+R38
+!i122 96
+R39
+VYg@`Im5<T]2YTooIQk?R=0
+R40
+r1
+!s85 0
+31
+R41
+R42
+R43
+!i113 0
+R44
+R17
+Yinterface_ram
+R19
+Z47 !s110 1743053932
+!i10b 1
+!s100 MVJ_@G]Dd;hSm9aOd0BkD3
+I6oMKeO2Gd03oSom@acBGN1
+S1
+R26
+w1739621310
+8interface_ram.sv
+Finterface_ram.sv
+!i122 96
+R39
+Z48 VDg1SIo80bB@j0V0VzS_@n1
+R40
+r1
+!s85 0
+31
+R41
+R42
+R43
+!i113 0
+R44
+R17
+vram
+R47
+!i10b 1
+!s100 S8THXOQj6YFbLNIYTfKi63
+IjLnlmcbd30MgSRM8dW9G<2
+R26
+w1739621450
+8ram.v
+Fram.v
+!i122 96
+L0 1 52
+R48
+R40
+r1
+!s85 0
+31
+R41
+R42
+R43
+!i113 0
+R44
+R17
+Xsequence_ram
+R19
+R20
+R22
+R25
+!i10b 1
+!s100 BMj4Q7>J^]9_B55jB2_SR1
+IPg6N[`4c8E[]5TU6@ALMS2
+S1
+R26
+w1743053647
+8sequnce_ram.sv
+Fsequnce_ram.sv
+R27
+R28
+R29
+R30
+R31
+R32
+R33
+R34
+R35
+R36
+R37
+R38
+!i122 96
+R39
+VPg6N[`4c8E[]5TU6@ALMS2
+R40
+r1
+!s85 0
+31
+R41
+R42
+R43
+!i113 0
+R44
+R17
+Xsequencer_ram
+R19
+R20
+R22
+R25
+!i10b 1
+!s100 i7z`0mFTI0_f0?S^H4J;j1
+Ing6@k2M2cnK1`aP=R<OnW3
+S1
+R26
+w1742570025
+8sequencer_ram.sv
+Fsequencer_ram.sv
+R27
+R28
+R29
+R30
+R31
+R32
+R33
+R34
+R35
+R36
+R37
+R38
+!i122 96
+R39
+Vng6@k2M2cnK1`aP=R<OnW3
+R40
+r1
+!s85 0
+31
+R41
+R42
+R43
+!i113 0
+R44
+R17
+Xsequnce_ram_item
+R19
+R20
+R25
+!i10b 1
+!s100 =o1o?]oh_Wi_kbc>1z:;;2
+IKa?hH?KH?SF_SAI2GQZO[0
+S1
+R26
+w1742569060
+8sequnce_ram_item.sv
+Fsequnce_ram_item.sv
+R27
+R28
+R29
+R30
+R31
+R32
+R33
+R34
+R35
+R36
+R37
+R38
+!i122 96
+R39
+VKa?hH?KH?SF_SAI2GQZO[0
+R40
+r1
+!s85 0
+31
+R41
+R42
+R43
+!i113 0
+R44
+R17
+Xtest_ram
+R45
+R19
+R20
+R21
+R22
+R23
+R24
+R46
+Z49 DXx4 work 7 env_ram 0 22 Yg@`Im5<T]2YTooIQk?R=0
+Z50 DXx4 work 12 sequence_ram 0 22 Pg6N[`4c8E[]5TU6@ALMS2
+R25
+!i10b 1
+!s100 <=@I;`KYcNmcLmoC]HgdA3
+I9AKe:BkJGSimo3HBK;UN;1
+S1
+R26
+w1743053906
+8test_ram.sv
+Ftest_ram.sv
+R27
+R28
+R29
+R30
+R31
+R32
+R33
+R34
+R35
+R36
+R37
+R38
+!i122 96
+R39
+V9AKe:BkJGSimo3HBK;UN;1
+R40
+r1
+!s85 0
+31
+R41
+R42
+R43
+!i113 0
+R44
+R17
+vtop_module_ram
+R19
+R19
+R20
+R21
+R22
+R23
+R24
+R46
+R49
+R50
+Z51 DXx4 work 8 test_ram 0 22 9AKe:BkJGSimo3HBK;UN;1
+DXx4 work 22 top_module_ram_sv_unit 0 22 I[PWN6l7Jka]56mVJhP6F0
+R25
+R48
+r1
+!s85 0
+!i10b 1
+!s100 occZAK>^fL[SY1bchcf4Y0
+I1fif;1`@5?NVQ[302><VI0
+!s105 top_module_ram_sv_unit
+S1
+R26
+Z52 w1742477194
+Z53 8top_module_ram.sv
+Z54 Ftop_module_ram.sv
+!i122 96
+Z55 L0 4 22
+R40
+31
+R41
+R42
+R43
+!i113 0
+R44
+R17
+Xtop_module_ram_sv_unit
+R19
+R19
+R20
+R21
+R22
+R23
+R24
+R46
+R49
+R50
+R51
+R25
+VI[PWN6l7Jka]56mVJhP6F0
+r1
+!s85 0
+!i10b 1
+!s100 Sm^S^WG0WO_BA1DXi9KXl1
+II[PWN6l7Jka]56mVJhP6F0
+!i103 1
+S1
+R26
+R52
+R53
+R54
+R27
+R28
+R29
+R30
+R31
+R32
+R33
+R34
+R35
+R36
+R37
+R38
+!i122 96
+Z56 L0 2 0
+R40
+31
+R41
+R42
+R43
+!i113 0
+R44
+R17
+vtop_ram
+R19
+R20
+Z57 DXx4 work 10 config_ram 0 22 YiK]3Li_;YIdg;EZIb?3<1
+Z58 DXx4 work 10 driver_ram 0 22 W<o]J=eY;VlGCmck_a;223
+Z59 DXx4 work 7 env_ram 0 22 G5U26Cj<gZLc`oRVP;M4F3
+Z60 DXx4 work 8 test_ram 0 22 e?hGFRo8iKX;InUHRHY;g3
+DXx4 work 15 top_ram_sv_unit 0 22 fd`jDJGChAzPnm:GNQkVD3
+Z61 !s110 1739625453
+R48
+r1
+!s85 0
+!i10b 1
+!s100 ZWozi[BYGb2i>h25g_hjf0
+Iil@QfS61Q`NJEM]Hl6C=`1
+!s105 top_ram_sv_unit
+S1
+R26
+Z62 w1739625380
+Z63 8D:/courses/Digital/Verification/Projects/Project - 3 SPI using UVM/RAM env/top_ram.sv
+Z64 FD:/courses/Digital/Verification/Projects/Project - 3 SPI using UVM/RAM env/top_ram.sv
+!i122 41
+R55
+R40
+31
+Z65 !s108 1739625453.000000
+Z66 !s107 C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_deprecated_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_reg_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_callback_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_sequence_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_imps.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_tlm_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_printer_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_object_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_phase_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_message_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_version_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/uvm_macros.svh|D:/courses/Digital/Verification/Projects/Project - 3 SPI using UVM/RAM env/top_ram.sv|
+Z67 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|D:/courses/Digital/Verification/Projects/Project - 3 SPI using UVM/RAM env/top_ram.sv|
+!i113 0
+Z68 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R17
+Xtop_ram_sv_unit
+R19
+R20
+R57
+R58
+R59
+R60
+R61
+Vfd`jDJGChAzPnm:GNQkVD3
+r1
+!s85 0
+!i10b 1
+!s100 mMhFhP[DnN<Jj3ihYG1zo0
+Ifd`jDJGChAzPnm:GNQkVD3
+!i103 1
+S1
+R26
+R62
+R63
+R64
+R27
+R28
+R29
+R30
+R31
+R32
+R33
+R34
+R35
+R36
+R37
+R38
+!i122 41
+R56
+R40
+31
+R65
+R66
+R67
+!i113 0
+R68
+R17
