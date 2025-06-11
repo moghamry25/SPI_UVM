@@ -3,8 +3,10 @@ interface_ram.sv
 config_ram.sv
 sequnce_ram_item.sv
 sequnce_ram.sv
+scoreboard_ram.sv
 sequencer_ram.sv
 driver_ram.sv
+monitor_ram.sv
 agent_ram.sv
 env_ram.sv
 test_ram.sv
