@@ -11,14 +11,14 @@ uvm_tlm_analysis_fifo #(sequnce_ram_item) sb_fifo;
 sequnce_ram_item item;
 
 // Golden model state variables
-logic [7:0] current_dout = 0;
-logic current_tx_valid = 0;
-logic [7:0] temp_rd = 0;
-logic [7:0] temp_wr = 0;
+logic [7:0] current_dout ;  // Current dout value
+logic current_tx_valid ;
+logic [7:0] temp_rd ;
+logic [7:0] temp_wr ;
 logic [7:0] mem [0:255];
 
 // Expected outputs
-logic [7:0] expected_data;
+logic [7:0] expected_data ;
 logic tx_valid_expected;
 
 int error_count = 0;

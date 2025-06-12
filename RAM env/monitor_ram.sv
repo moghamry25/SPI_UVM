@@ -26,14 +26,14 @@ class monitor_ram extends uvm_monitor;
         forever begin
             item = sequnce_ram_item::type_id::create("item");
             // Wait for a valid transaction
-            @(negedge if_ram.clk);
+           @(negedge if_ram.clk);
             
                 item.datain = if_ram.din;
                 item.rx_valid = if_ram.rx_valid;
                 item.rst_n = if_ram.rst_n;
                 item.dout = if_ram.dout;
                 item.tx_valid = if_ram.tx_valid;
-
+                
                 // Send the item to the analysis export
                 mon_ap.write(item);
             end
