@@ -15,6 +15,7 @@ class agent_ram extends uvm_agent;
     config_ram cfg;
     monitor_ram mon_ram;
     uvm_analysis_port #(sequnce_ram_item) agent_ap;
+    
     function new(string name = "agent_ram", uvm_component parent = null);
         super.new(name, parent);
         

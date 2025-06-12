@@ -4,6 +4,7 @@ config_ram.sv
 sequnce_ram_item.sv
 sequnce_ram.sv
 scoreboard_ram.sv
+coverage_ram.sv
 sequencer_ram.sv
 driver_ram.sv
 monitor_ram.sv
