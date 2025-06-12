@@ -11,5 +11,6 @@ driver_ram.sv
 monitor_ram.sv
 agent_ram.sv
 env_ram.sv
+sva_ram.sv
 test_ram.sv
 top_module_ram.sv
