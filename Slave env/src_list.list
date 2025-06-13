@@ -8,6 +8,7 @@ sequence_rst_slave.sv
 driver_slave.sv
 monitor_slave.sv
 agent_slave.sv
+scoreboard_slave.sv
 coverage_slave.sv
 env_slave.sv
 test_slave.sv
