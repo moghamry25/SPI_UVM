@@ -1,0 +1,12 @@
+slave.v
+interface_slave.sv
+config_slave.sv
+sequencer_slave.sv
+sequence_item_slave.sv
+sequence_stim_slave.sv
+sequence_rst_slave.sv
+driver_slave.sv
+agent_slave.sv
+env_slave.sv
+test_slave.sv
+top_slave.sv
