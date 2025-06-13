@@ -18,9 +18,9 @@ class sequence_slave_item extends uvm_sequence_item;
 
     constraint c1 {
         rst_n dist {0 := 1, 1 := 99}; // Reset signal is low for 1% of the time
-        MOSI dist {0 := 1, 1 := 99}; // MOSI signal is low for 1% of the time
-        SS_n dist {0 := 1, 1 := 99}; // Slave Select signal is low for 1% of the time
-        tx_valid dist {0 := 1, 1 := 99}; // Transmission valid signal is low for 1% of the time
+        MOSI dist {0 := 75, 1 := 25}; // MOSI signal is low for 1% of the time
+        SS_n dist {0 := 75, 1 := 25}; // Slave Select signal is low for 1% of the time
+        tx_valid dist {0 := 50, 1 := 50}; // Transmission valid signal is low for 1% of the time
         
     }
 

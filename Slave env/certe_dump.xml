@@ -22,6 +22,11 @@
            </instance> 
   
   
+           <instance type=" monitor_slave "> 
+              mon_slave 
+           </instance> 
+  
+  
            <instance type=" sequencer_slave "> 
               seq_slave 
   
