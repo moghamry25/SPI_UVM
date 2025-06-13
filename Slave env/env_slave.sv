@@ -3,14 +3,14 @@ package env_slave;
 import uvm_pkg::*;
 import agent_slave::*;
 import config_slave::*;
-
+import coverage_slave::*;
 
 class env_slave extends uvm_env;
     `uvm_component_utils(env_slave)
 
-    // Configuration object
-    config_slave cfg;
+
     agent_slave agt_slave;
+    coverage_slave cov_slave;
     // Constructor
     function new(string name = "env_slave", uvm_component parent = null);
         super.new(name, parent);
@@ -20,13 +20,20 @@ class env_slave extends uvm_env;
     function void build_phase(uvm_phase phase);
         super.build_phase(phase);
 
-        // Create the configuration object
-        cfg = config_slave::type_id::create("cfg");
+     
         agt_slave = agent_slave::type_id::create("agt_slave", this);
+        cov_slave = coverage_slave::type_id::create("cov_slave", this);
        
 
         
     endfunction // build_phase
+    function void connect_phase(uvm_phase phase);
+        super.connect_phase(phase);
+
+        // Connect the agent's analysis port to the coverage
+        agt_slave.agent_cov_ap.connect(cov_slave.cov_export);
+        
+    endfunction    
 endclass // env_slave extends uvm_env    
     
 endpackage

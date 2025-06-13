@@ -7,12 +7,17 @@ class monitor_slave extends uvm_monitor;
 
     virtual interface_slave if_slave;
     sequence_slave_item item;
+    uvm_analysis_port#(sequence_slave_item) mon_ap;
     // Constructor
     function new(string name = "monitor_slave", uvm_component parent = null);
         super.new(name, parent);
     endfunction // new
 
-    
+    function void build_phase(uvm_phase phase);
+        super.build_phase(phase);
+        // Create the analysis port
+        mon_ap = new("mon_ap", this);
+    endfunction
 
     task run_phase(uvm_phase phase);
         super.run_phase(phase);
@@ -27,11 +32,14 @@ class monitor_slave extends uvm_monitor;
             item.SS_n = if_slave.SS_n;
             item.tx_valid = if_slave.tx_valid;
             item.tx_data = if_slave.tx_data;
+            item.MISO = if_slave.MISO;
+            item.rx_valid = if_slave.rx_valid;
+            item.rx_data = if_slave.rx_data;
             
             
             
 
-
+        mon_ap.write(item); // Send the item to the analysis export
         end
     endtask // run_phase
 

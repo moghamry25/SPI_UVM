@@ -5,6 +5,7 @@ import config_slave::*;
 import sequencer_slave::*;
 import driver_slave::*;
 import monitor_slave::*;
+import sequence_slave_item::*;
 class agent_slave extends uvm_agent;
 `uvm_component_utils(agent_slave)
 
@@ -12,6 +13,9 @@ class agent_slave extends uvm_agent;
     sequencer_slave seq_slave;
     driver_slave drv_slave;
     monitor_slave mon_slave;
+    
+    uvm_analysis_port#(sequence_slave_item) agent_cov_ap;
+
     function new(string name = "agent_slave", uvm_component parent = null);
         super.new(name, parent);
     endfunction 
@@ -27,7 +31,7 @@ class agent_slave extends uvm_agent;
         seq_slave = sequencer_slave::type_id::create("seq_slave", this);
         drv_slave = driver_slave::type_id::create("drv_slave", this);
         mon_slave = monitor_slave::type_id::create("mon_slave", this);
-        
+        agent_cov_ap = new("agent_cov_ap", this);
     endfunction
 
     function void connect_phase(uvm_phase phase);
