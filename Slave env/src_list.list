@@ -12,5 +12,6 @@ golden_slave.sv
 scoreboard_slave.sv
 coverage_slave.sv
 env_slave.sv
+sva_slave.sv
 test_slave.sv
 top_slave.sv
