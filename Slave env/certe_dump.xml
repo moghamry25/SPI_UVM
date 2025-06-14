@@ -33,6 +33,7 @@
   
               <port if_type = "uvm_analysis_port" txn_type = "anonymous"> 
                  mon_ap 
+                 <connection>  uvm_test_top.env.agt_slave.agent_cov_ap  </connection> 
               </port> 
            </instance> 
   

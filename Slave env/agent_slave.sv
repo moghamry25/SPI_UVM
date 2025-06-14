@@ -40,6 +40,7 @@ class agent_slave extends uvm_agent;
         
         drv_slave.if_slave = cfg.if_slave;
         mon_slave.if_slave = cfg.if_slave;
+        mon_slave.mon_ap.connect(agent_cov_ap);
         drv_slave.seq_item_port.connect(seq_slave.seq_item_export);
     endfunction    
 endclass

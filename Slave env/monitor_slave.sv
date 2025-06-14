@@ -26,6 +26,7 @@ class monitor_slave extends uvm_monitor;
         item = sequence_slave_item::type_id::create("item");
 
             @(negedge if_slave.clk); // Wait for clock edge
+          //  @(negedge if_slave.clk); // Wait for clock edge
 
             item.rst_n = if_slave.rst_n;
             item.MOSI = if_slave.MOSI;
@@ -35,7 +36,9 @@ class monitor_slave extends uvm_monitor;
             item.MISO = if_slave.MISO;
             item.rx_valid = if_slave.rx_valid;
             item.rx_data = if_slave.rx_data;
-            
+            item.MISO_ref = if_slave.MISO_ref;
+            item.rx_valid_ref = if_slave.rx_valid_ref;
+            item.rx_data_ref = if_slave.rx_data_ref;
             
             
 

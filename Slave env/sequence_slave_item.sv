@@ -9,8 +9,8 @@ class sequence_slave_item extends uvm_sequence_item;
    rand logic rst_n; // Reset signal for the slave
    rand logic MOSI,SS_n,tx_valid;
    rand logic [7:0]tx_data;
-   logic MISO,rx_valid;
-   logic [9:0]rx_data; // Data received from the slave
+   logic MISO,rx_valid,MISO_ref,rx_valid_ref;
+   logic [9:0]rx_data,rx_data_ref; // Data received from the slave
     // Constructor
     function new(string name = "sequence_slave_item");
         super.new(name);

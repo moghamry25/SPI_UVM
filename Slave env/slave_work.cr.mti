@@ -17,6 +17,30 @@ QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
 Top level modules:
 	--none--
 
+} {} {}} {D:/courses/Digital/Verification/Projects/Project - 3 SPI using UVM/SPI_UVM/Slave env/agent_slave.sv} {1 {vlog -work work -vopt -sv -stats=none {D:/courses/Digital/Verification/Projects/Project - 3 SPI using UVM/SPI_UVM/Slave env/agent_slave.sv}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling package agent_slave
+** Note: (vlog-2286) D:/courses/Digital/Verification/Projects/Project - 3 SPI using UVM/SPI_UVM/Slave env/agent_slave.sv(2): Using implicit +incdir+C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Importing package config_slave
+-- Importing package sequencer_slave
+-- Importing package sequence_slave_item
+-- Importing package driver_slave
+-- Importing package monitor_slave
+
+Top level modules:
+	--none--
+
+} {} {}} {D:/courses/Digital/Verification/Projects/Project - 3 SPI using UVM/SPI_UVM/Slave env/monitor_slave.sv} {1 {vlog -work work -vopt -sv -stats=none {D:/courses/Digital/Verification/Projects/Project - 3 SPI using UVM/SPI_UVM/Slave env/monitor_slave.sv}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling package monitor_slave
+** Note: (vlog-2286) D:/courses/Digital/Verification/Projects/Project - 3 SPI using UVM/SPI_UVM/Slave env/monitor_slave.sv(2): Using implicit +incdir+C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Importing package sequence_slave_item
+
+Top level modules:
+	--none--
+
 } {} {}} {D:/courses/Digital/Verification/Projects/Project - 3 SPI using UVM/SPI_UVM/Slave env/test_slave.sv} {1 {vlog -work work -vopt -sv -stats=none {D:/courses/Digital/Verification/Projects/Project - 3 SPI using UVM/SPI_UVM/Slave env/test_slave.sv}
 QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
 -- Compiling package test_slave
@@ -30,8 +54,26 @@ QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
 -- Importing package driver_slave
 -- Importing package monitor_slave
 -- Importing package coverage_slave
+-- Importing package scoreboard_slave
 -- Importing package sequence_rst_slave
 -- Importing package sequence_stim_slave
+
+Top level modules:
+	--none--
+
+} {} {}} {D:/courses/Digital/Verification/Projects/Project - 3 SPI using UVM/SPI_UVM/Slave env/env_slave.sv} {1 {vlog -work work -vopt -sv -stats=none {D:/courses/Digital/Verification/Projects/Project - 3 SPI using UVM/SPI_UVM/Slave env/env_slave.sv}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling package env_slave
+** Note: (vlog-2286) D:/courses/Digital/Verification/Projects/Project - 3 SPI using UVM/SPI_UVM/Slave env/env_slave.sv(2): Using implicit +incdir+C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Importing package agent_slave
+-- Importing package config_slave
+-- Importing package sequencer_slave
+-- Importing package sequence_slave_item
+-- Importing package driver_slave
+-- Importing package monitor_slave
+-- Importing package coverage_slave
+-- Importing package scoreboard_slave
 
 Top level modules:
 	--none--
@@ -45,26 +87,6 @@ QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
 
 Top level modules:
 	--none--
-
-} {} {}} {D:/courses/Digital/Verification/Projects/Project - 3 SPI using UVM/SPI_UVM/Slave env/top_slave.sv} {1 {vlog -work work -vopt -sv -stats=none {D:/courses/Digital/Verification/Projects/Project - 3 SPI using UVM/SPI_UVM/Slave env/top_slave.sv}
-QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
--- Compiling module top_slave
-** Note: (vlog-2286) D:/courses/Digital/Verification/Projects/Project - 3 SPI using UVM/SPI_UVM/Slave env/top_slave.sv(2): Using implicit +incdir+C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
--- Importing package test_slave
--- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
--- Importing package env_slave
--- Importing package agent_slave
--- Importing package config_slave
--- Importing package sequencer_slave
--- Importing package sequence_slave_item
--- Importing package driver_slave
--- Importing package monitor_slave
--- Importing package coverage_slave
--- Importing package sequence_rst_slave
--- Importing package sequence_stim_slave
-
-Top level modules:
-	top_slave
 
 } {} {}} {D:/courses/Digital/Verification/Projects/Project - 3 SPI using UVM/SPI_UVM/Slave env/coverage_slave.sv} {1 {vlog -work work -vopt -sv -stats=none {D:/courses/Digital/Verification/Projects/Project - 3 SPI using UVM/SPI_UVM/Slave env/coverage_slave.sv}
 QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
