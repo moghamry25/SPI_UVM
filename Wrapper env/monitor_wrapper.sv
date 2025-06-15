@@ -32,6 +32,7 @@ class monitor_wrapper extends uvm_monitor;
                 item.MISO = if_wrapper.MISO;
                 item.rst_n = if_wrapper.rst_n;
                 item.SS_n = if_wrapper.SS_n;
+                item.MISO_ref = if_wrapper.MISO_ref;
                 
                 
                 // Send the item to the analysis export

@@ -38,13 +38,13 @@ class scoreboard_wrapper extends uvm_scoreboard;
             // Wait for an item to be written to the FIFO
         sb_fifo.get(item);
         
-        //   if (item.rx_data == item.rx_data_ref && item.rx_valid == item.rx_valid_ref && item.MISO == item.MISO_ref) begin
-        //     correct++;
-        //   end 
-        //   else begin
-        //     incorrect++;
-        //    `uvm_error("SCOREBOARD", $sformatf("Incorrect data: Expected %0d, Got %0d", item.rx_data_ref, item.rx_data))
-        //   end
+          if ( item.MISO == item.MISO_ref) begin
+            correct++;
+          end 
+          else begin
+            incorrect++;
+           `uvm_error("SCOREBOARD", $sformatf("Incorrect data: Expected %0d, Got %0d", item.MISO, item.MISO_ref))
+         end
             
         end
     endtask 

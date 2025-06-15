@@ -20,6 +20,8 @@ slave DUT_slave(if_slave.MOSI,if_slave.MISO, if_slave.SS_n,if_slave.clk, if_slav
     if_slave.clk, if_slave.rst_n,if_slave.SS_n,if_slave.tx_valid,if_slave.tx_data,if_slave.MISO_ref,if_slave.rx_valid_ref, if_slave.rx_data_ref);
     
 wrapper DUT_wrapper(if_wrapper.MOSI, if_wrapper.MISO, if_wrapper.SS_n, if_wrapper.clk, if_wrapper.rst_n);   
+golden_wrapper golden_wrapper(if_wrapper.MOSI,if_wrapper.SS_n ,if_wrapper.clk, if_wrapper.rst_n,if_wrapper.MISO_ref);
+
 assign if_slave.MOSI=DUT_wrapper.MOSI;
 assign if_slave.SS_n=DUT_wrapper.SS_n;
 assign if_slave.rst_n=DUT_wrapper.rst_n;
