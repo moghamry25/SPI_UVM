@@ -8,8 +8,8 @@ class sequnce_ram_item extends uvm_sequence_item;
     
     rand bit [9:0] datain;
     rand bit rx_valid,rst_n;	
-	logic [9:0] dout;
-    logic tx_valid;
+	logic [9:0] dout,dout_ref;
+    logic tx_valid,tx_valid_ref;
     
     function new(string name = "sequnce_ram_item");
         super.new(name);

@@ -15,6 +15,7 @@ interface_slave if_slave(clk);
 interface_ram if_ram(clk);
 
 ram DUT_ram(if_ram.din, if_ram.rx_valid, if_ram.clk, if_ram.rst_n, if_ram.dout, if_ram.tx_valid);
+golden_ram golden_ram(if_ram.din, if_ram.rx_valid, if_ram.clk, if_ram.rst_n, if_ram.dout_ref, if_ram.tx_valid_ref);
 slave DUT_slave(if_slave.MOSI,if_slave.MISO, if_slave.SS_n,if_slave.clk, if_slave.rst_n, if_slave.rx_data,if_slave.rx_valid,if_slave.tx_data, if_slave.tx_valid);
  golden_slave golden(if_slave.MOSI, 
     if_slave.clk, if_slave.rst_n,if_slave.SS_n,if_slave.tx_valid,if_slave.tx_data,if_slave.MISO_ref,if_slave.rx_valid_ref, if_slave.rx_data_ref);

@@ -14,6 +14,8 @@ module top_module_ram();
 
     interface_ram if_ram(clk);
     ram DUT(if_ram.din, if_ram.rx_valid, if_ram.clk, if_ram.rst_n, if_ram.dout, if_ram.tx_valid);
+    golden_ram golden_ram(if_ram.din, if_ram.rx_valid, if_ram.clk, if_ram.rst_n, if_ram.dout_ref, if_ram.tx_valid_ref);
+
     bind ram sva_ram sva_ram_inst(.clk(if_ram.clk), .rst_n(if_ram.rst_n), .rx_valid(if_ram.rx_valid), .tx_valid(if_ram.tx_valid), .datain(if_ram.din), .dout(if_ram.dout));
     initial begin
 

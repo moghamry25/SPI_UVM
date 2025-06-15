@@ -33,7 +33,8 @@ class monitor_ram extends uvm_monitor;
                 item.rst_n = if_ram.rst_n;
                 item.dout = if_ram.dout;
                 item.tx_valid = if_ram.tx_valid;
-                
+                item.dout_ref = if_ram.dout_ref;
+                item.tx_valid_ref = if_ram.tx_valid_ref;
                 // Send the item to the analysis export
                 mon_ap.write(item);
             end

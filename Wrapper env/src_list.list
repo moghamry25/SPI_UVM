@@ -12,6 +12,7 @@ monitor_slave.sv
 agent_slave.sv
 golden_slave.sv
 golden_wrapper.sv
+golden_ram.sv
 scoreboard_slave.sv
 coverage_slave.sv
 config_ram.sv

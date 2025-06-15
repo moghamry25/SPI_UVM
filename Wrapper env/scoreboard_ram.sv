@@ -46,15 +46,15 @@ class scoreboard_ram extends uvm_scoreboard;
         super.run_phase(phase);
         forever begin
             sb_fifo.get(item);
-            golden_model(item);  // Calculate expected outputs
+           // golden_model(item);  // Calculate expected outputs
             
-            if (expected_data === item.dout && tx_valid_expected === item.tx_valid) begin
+            if (item.dout_ref=== item.dout && item.tx_valid_ref === item.tx_valid) begin
                 correct_count++;
             end
             else begin
                 error_count++;
                 `uvm_error("SCOREBOARD", $sformatf("Mismatch! datain=0x%0h rx_valid=%0b rst_n=%0b\nExpected: dout=0x%0h tx_valid=%0b\nActual:   dout=0x%0h tx_valid=%0b", 
-                          item.datain, item.rx_valid, item.rst_n, expected_data, tx_valid_expected, item.dout, item.tx_valid))
+                          item.datain, item.rx_valid, item.rst_n, item.dout_ref, item.tx_valid_ref, item.dout, item.tx_valid))
             end
         end    
     endtask 
