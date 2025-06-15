@@ -8,7 +8,7 @@ import uvm_pkg::*;
         `uvm_object_utils(config_ram)
 
         virtual interface_ram if_ram;
-
+        uvm_active_passive_enum is_passive = UVM_PASSIVE; // Default to passive agent
         function new(string name = "config_ram");
             super.new(name);           
         endfunction

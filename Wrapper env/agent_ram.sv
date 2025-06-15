@@ -29,7 +29,7 @@ class agent_ram extends uvm_agent;
          if(!uvm_config_db#(config_ram)::get(this, "", "GFG_ram", cfg))begin
             `uvm_fatal("build_phase", "Config object not get in agent class")
         end
-        if(is_passive)begin
+        if(cfg.is_passive == UVM_PASSIVE )begin
 
         seq_ram = sequencer_ram::type_id::create("seq_ram", this); 
         drv_ram = driver_ram::type_id::create("drv_ram", this);

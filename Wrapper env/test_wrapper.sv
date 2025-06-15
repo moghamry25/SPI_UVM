@@ -9,6 +9,7 @@ import config_wrapper::*;
 import config_ram::*;
 import sequence_wrapper_item::*;
 import sequence_rst_wrapper::*;
+import sequence_wrapper::*;
 class test_wrapper extends uvm_test;
     `uvm_component_utils(test_wrapper)
     env_wrapper env_wrapperr;
@@ -18,6 +19,7 @@ class test_wrapper extends uvm_test;
     config_wrapper cfg_wrapper;
     config_ram cfg_ram;
     sequence_rst_wrapper seq_rst_wrapper;
+    sequence_wrapper seq_wrapper;
     // Constructor
     function new(string name = "test_wrapper", uvm_component parent = null);
         super.new(name, parent);
@@ -37,6 +39,7 @@ class test_wrapper extends uvm_test;
         cfg_ram = config_ram::type_id::create("cfg_ram", this);
 
         seq_rst_wrapper = sequence_rst_wrapper::type_id::create("seq_rst_wrapper", this);
+        seq_wrapper = sequence_wrapper::type_id::create("seq_wrapper", this);
 
         // get the configuration objects in the UVM config database
         if (!uvm_config_db#(virtual interface_slave)::get(this, "", "vif_slave", cfg_slave.if_slave)) begin
@@ -65,7 +68,8 @@ class test_wrapper extends uvm_test;
 
         seq_rst_wrapper.start(env_wrapperr.agt_wrapper.seq_wrapper);
         `uvm_info("run_phase", "Wrapper sequence started", UVM_MEDIUM)
-        
+        seq_wrapper.start(env_wrapperr.agt_wrapper.seq_wrapper);
+        `uvm_info("run_phase", "Wrapper sequence started", UVM_MEDIUM)
 
         // Drop the objection when done
         phase.drop_objection(this);

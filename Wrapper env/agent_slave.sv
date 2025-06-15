@@ -28,7 +28,7 @@ class agent_slave extends uvm_agent;
             `uvm_fatal("build_phase", "Config object not get in agent class")        end
 
              // Create the sequencer
-        if(is_passive)begin
+        if(cfg.is_passive == UVM_PASSIVE )begin
         seq_slave = sequencer_slave::type_id::create("seq_slave", this);
         drv_slave = driver_slave::type_id::create("drv_slave", this);
         end     
