@@ -14,6 +14,7 @@ class agent_ram extends uvm_agent;
     sequencer_ram seq_ram;
     config_ram cfg;
     monitor_ram mon_ram;
+    bit is_passive = 1; // Set the agent as passive by default
     uvm_analysis_port #(sequnce_ram_item) agent_ap;
     
     function new(string name = "agent_ram", uvm_component parent = null);
@@ -25,11 +26,14 @@ class agent_ram extends uvm_agent;
         super.build_phase(phase);
 
 
-         if(!uvm_config_db#(config_ram)::get(this, "", "GFG", cfg))begin
+         if(!uvm_config_db#(config_ram)::get(this, "", "GFG_ram", cfg))begin
             `uvm_fatal("build_phase", "Config object not get in agent class")
         end
+        if(is_passive)begin
+
         seq_ram = sequencer_ram::type_id::create("seq_ram", this); 
         drv_ram = driver_ram::type_id::create("drv_ram", this);
+        end
         mon_ram = monitor_ram::type_id::create("mon_ram", this);
         agent_ap = new("agent_ap", this);
     endfunction //build_phase()    

@@ -17,6 +17,7 @@ config_ram.sv
 config_wrapper.sv
 sequnce_ram_item.sv
 sequence_wrapper_item.sv
+sequence_rst_wrapper.sv
 scoreboard_ram.sv
 coverage_ram.sv
 sequencer_ram.sv

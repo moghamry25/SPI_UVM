@@ -13,7 +13,7 @@ class agent_slave extends uvm_agent;
     sequencer_slave seq_slave;
     driver_slave drv_slave;
     monitor_slave mon_slave;
-    
+    bit is_passive = 1; // Set the agent as passive by default
     uvm_analysis_port#(sequence_slave_item) agent_cov_ap;
 
     function new(string name = "agent_slave", uvm_component parent = null);
@@ -24,12 +24,15 @@ class agent_slave extends uvm_agent;
         super.build_phase(phase);
        
         // Create the configuration object
-        if(!uvm_config_db#(config_slave)::get(this, "", "GFG", cfg))begin
+        if(!uvm_config_db#(config_slave)::get(this, "", "GFG_slave", cfg))begin
             `uvm_fatal("build_phase", "Config object not get in agent class")        end
 
              // Create the sequencer
+        if(is_passive)begin
         seq_slave = sequencer_slave::type_id::create("seq_slave", this);
         drv_slave = driver_slave::type_id::create("drv_slave", this);
+        end     
+        
         mon_slave = monitor_slave::type_id::create("mon_slave", this);
         agent_cov_ap = new("agent_cov_ap", this);
     endfunction

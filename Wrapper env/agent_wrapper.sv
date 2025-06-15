@@ -6,7 +6,7 @@ import driver_wrapper::*;
 import sequencer_wrapper::*;
 import config_wrapper::*;
 import monitor_wrapper::*;
-import sequnce_wrapper_item::*;
+import sequence_wrapper_item::*;
 class agent_wrapper extends uvm_agent;
 `uvm_component_utils(agent_wrapper)
 
@@ -14,7 +14,7 @@ class agent_wrapper extends uvm_agent;
     sequencer_wrapper seq_wrapper;
     config_wrapper cfg;
     monitor_wrapper mon_wrapper;
-    uvm_analysis_port #(sequnce_wrapper_item) agent_ap;
+    uvm_analysis_port #(sequence_wrapper_item) agent_ap;
     
     function new(string name = "agent_wrapper", uvm_component parent = null);
         super.new(name, parent);

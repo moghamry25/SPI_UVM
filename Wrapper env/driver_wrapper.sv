@@ -32,8 +32,8 @@ class driver_wrapper extends uvm_driver#(sequence_wrapper_item);
                 if_wrapper.rst_n = item.rst_n;
                 if_wrapper.MOSI = item.MOSI;
                 if_wrapper.SS_n = item.SS_n;
-                if_wrapper.tx_valid = item.tx_valid;
-                if_wrapper.tx_data = item.tx_data;
+               
+
                 @(negedge if_wrapper.clk); // Wait for the clock edge
                 seq_item_port.item_done();
             end
