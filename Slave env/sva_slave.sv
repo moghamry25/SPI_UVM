@@ -11,6 +11,11 @@ module sva_slave(
 
 
 );
-    
+    property rst_n_assertion;
+        @(posedge clk) (!rst_n) |=> (rx_valid == 0 && rx_data == 0 && MISO == 0)
+    endproperty
+   assert property (rst_n_assertion)
+        else $error("rst_n assertion failed: rst_n is low while rx_valid, rx_data, and MISO are not zero");
 
+    cover property (rst_n_assertion);  
 endmodule
