@@ -158,18 +158,18 @@ QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
 Top level modules:
 	--none--
 
-} {} {}} {D:/courses/Digital/Verification/Projects/Project - 3 SPI using UVM/SPI_UVM/Slave env/golden_slave.sv} {1 {vlog -work work -vopt -sv -stats=none {D:/courses/Digital/Verification/Projects/Project - 3 SPI using UVM/SPI_UVM/Slave env/golden_slave.sv}
-QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
--- Compiling module golden_slave
-
-Top level modules:
-	golden_slave
-
 } {} {}} {D:/courses/Digital/Verification/Projects/Project - 3 SPI using UVM/SPI_UVM/Slave env/interface_slave.sv} {1 {vlog -work work -vopt -sv -stats=none {D:/courses/Digital/Verification/Projects/Project - 3 SPI using UVM/SPI_UVM/Slave env/interface_slave.sv}
 QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
 -- Compiling interface interface_slave
 
 Top level modules:
 	--none--
+
+} {} {}} {D:/courses/Digital/Verification/Projects/Project - 3 SPI using UVM/SPI_UVM/Slave env/golden_slave.sv} {1 {vlog -work work -vopt -sv -stats=none {D:/courses/Digital/Verification/Projects/Project - 3 SPI using UVM/SPI_UVM/Slave env/golden_slave.sv}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module golden_slave
+
+Top level modules:
+	golden_slave
 
 } {} {}}
