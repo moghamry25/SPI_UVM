@@ -1,0 +1,233 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /top_module_ram/DUT/sva_ram_inst
+=== Design Unit: work.sva_ram
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       3         3         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/top_module_ram/DUT/sva_ram_inst/reset_assertion
+                     sva_ram.sv(16)                     0          1
+/top_module_ram/DUT/sva_ram_inst/tx_vaild_for_first_three_cases
+                     sva_ram.sv(23)                     0          1
+/top_module_ram/DUT/sva_ram_inst/tx_vaild_for_last_case
+                     sva_ram.sv(30)                     0          1
+
+Directive Coverage:
+    Directives                       3         3         0   100.00%
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/top_module_ram/DUT/sva_ram_inst/cover__tx_vaild_pp 
+                                         sva_ram Verilog  SVA  sva_ram.sv(31)   246 Covered   
+/top_module_ram/DUT/sva_ram_inst/cover__tx_vaildd 
+                                         sva_ram Verilog  SVA  sva_ram.sv(24)   238 Covered   
+/top_module_ram/DUT/sva_ram_inst/cover__rst_n_p 
+                                         sva_ram Verilog  SVA  sva_ram.sv(17)    12 Covered   
+
+=================================================================================
+=== Instance: /sequence_ram
+=== Design Unit: work.sequence_ram
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       1         1         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/sequence_ram/sequence_ram/body/#ublk#50848701#14/immed__18
+                     sequnce_ram.sv(18)                 0          1
+
+=================================================================================
+=== Instance: /coverage_ram
+=== Design Unit: work.coverage_ram
+=================================================================================
+
+Covergroup Coverage:
+    Covergroups                      1        na        na   100.00%
+        Coverpoints/Crosses          5        na        na        na
+            Covergroup Bins         17        17         0   100.00%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /coverage_ram/coverage_ram/cov1                 100.00%        100          -    Covered              
+    covered/total bins:                                    17         17          -                      
+    missing/total bins:                                     0         17          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint #coverpoint__0#                        100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint #coverpoint__1#                        100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint #coverpoint__2#                        100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint #coverpoint__3#                        100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint #coverpoint__4#                        100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+ Covergroup instance \/coverage_ram::coverage_ram::cov1  
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                    17         17          -                      
+    missing/total bins:                                     0         17          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint #coverpoint__0#                        100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin bin_00                                        266          1          -    Covered              
+        bin bin_01                                        245          1          -    Covered              
+        bin bin_10                                        238          1          -    Covered              
+        bin bin_11                                        252          1          -    Covered              
+        bin bin_trafser_write                              57          1          -    Covered              
+        bin bin_trafser_read                               55          1          -    Covered              
+    Coverpoint #coverpoint__1#                        100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin bin_00                                          4          1          -    Covered              
+        bin bin_ff                                          1          1          -    Covered              
+        bin bin_7f                                          6          1          -    Covered              
+        bin bin_AA                                          5          1          -    Covered              
+        bin bin_55                                          5          1          -    Covered              
+    Coverpoint #coverpoint__2#                        100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin valid                                         993          1          -    Covered              
+        bin invalid                                         8          1          -    Covered              
+    Coverpoint #coverpoint__3#                        100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin reset                                          12          1          -    Covered              
+        bin no_reset                                      989          1          -    Covered              
+    Coverpoint #coverpoint__4#                        100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin valid                                         250          1          -    Covered              
+        bin invalid                                       751          1          -    Covered              
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /coverage_ram/coverage_ram/cov1                 100.00%        100          -    Covered              
+    covered/total bins:                                    17         17          -                      
+    missing/total bins:                                     0         17          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint #coverpoint__0#                        100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint #coverpoint__1#                        100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint #coverpoint__2#                        100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint #coverpoint__3#                        100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint #coverpoint__4#                        100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+ Covergroup instance \/coverage_ram::coverage_ram::cov1  
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                    17         17          -                      
+    missing/total bins:                                     0         17          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint #coverpoint__0#                        100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin bin_00                                        266          1          -    Covered              
+        bin bin_01                                        245          1          -    Covered              
+        bin bin_10                                        238          1          -    Covered              
+        bin bin_11                                        252          1          -    Covered              
+        bin bin_trafser_write                              57          1          -    Covered              
+        bin bin_trafser_read                               55          1          -    Covered              
+    Coverpoint #coverpoint__1#                        100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin bin_00                                          4          1          -    Covered              
+        bin bin_ff                                          1          1          -    Covered              
+        bin bin_7f                                          6          1          -    Covered              
+        bin bin_AA                                          5          1          -    Covered              
+        bin bin_55                                          5          1          -    Covered              
+    Coverpoint #coverpoint__2#                        100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin valid                                         993          1          -    Covered              
+        bin invalid                                         8          1          -    Covered              
+    Coverpoint #coverpoint__3#                        100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin reset                                          12          1          -    Covered              
+        bin no_reset                                      989          1          -    Covered              
+    Coverpoint #coverpoint__4#                        100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin valid                                         250          1          -    Covered              
+        bin invalid                                       751          1          -    Covered              
+
+TOTAL COVERGROUP COVERAGE: 100.00%  COVERGROUP TYPES: 1
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/top_module_ram/DUT/sva_ram_inst/cover__tx_vaild_pp 
+                                         sva_ram Verilog  SVA  sva_ram.sv(31)   246 Covered   
+/top_module_ram/DUT/sva_ram_inst/cover__tx_vaildd 
+                                         sva_ram Verilog  SVA  sva_ram.sv(24)   238 Covered   
+/top_module_ram/DUT/sva_ram_inst/cover__rst_n_p 
+                                         sva_ram Verilog  SVA  sva_ram.sv(17)    12 Covered   
+
+TOTAL DIRECTIVE COVERAGE: 100.00%  COVERS: 3
+
+ASSERTION RESULTS:
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/top_module_ram/DUT/sva_ram_inst/reset_assertion
+                     sva_ram.sv(16)                     0          1
+/top_module_ram/DUT/sva_ram_inst/tx_vaild_for_first_three_cases
+                     sva_ram.sv(23)                     0          1
+/top_module_ram/DUT/sva_ram_inst/tx_vaild_for_last_case
+                     sva_ram.sv(30)                     0          1
+/sequence_ram/sequence_ram/body/#ublk#50848701#14/immed__18
+                     sequnce_ram.sv(18)                 0          1
+
+Total Coverage By Instance (filtered view): 100.00%
+

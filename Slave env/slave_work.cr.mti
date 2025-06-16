@@ -149,18 +149,18 @@ QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
 Top level modules:
 	--none--
 
-} {} {}} {D:/courses/Digital/Verification/Projects/Project - 3 SPI using UVM/SPI_UVM/Slave env/slave.v} {1 {vlog -work work -vopt -stats=none {D:/courses/Digital/Verification/Projects/Project - 3 SPI using UVM/SPI_UVM/Slave env/slave.v}
-QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
--- Compiling module slave
-
-Top level modules:
-	slave
-
 } {} {}} {D:/courses/Digital/Verification/Projects/Project - 3 SPI using UVM/SPI_UVM/Slave env/sequence_slave_item.sv} {1 {vlog -work work -vopt -sv -stats=none {D:/courses/Digital/Verification/Projects/Project - 3 SPI using UVM/SPI_UVM/Slave env/sequence_slave_item.sv}
 QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
 -- Compiling package sequence_slave_item
 ** Note: (vlog-2286) D:/courses/Digital/Verification/Projects/Project - 3 SPI using UVM/SPI_UVM/Slave env/sequence_slave_item.sv(2): Using implicit +incdir+C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
 -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+
+Top level modules:
+	--none--
+
+} {} {}} {D:/courses/Digital/Verification/Projects/Project - 3 SPI using UVM/SPI_UVM/Slave env/interface_slave.sv} {1 {vlog -work work -vopt -sv -stats=none {D:/courses/Digital/Verification/Projects/Project - 3 SPI using UVM/SPI_UVM/Slave env/interface_slave.sv}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling interface interface_slave
 
 Top level modules:
 	--none--
@@ -171,12 +171,5 @@ QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
 
 Top level modules:
 	golden_slave
-
-} {} {}} {D:/courses/Digital/Verification/Projects/Project - 3 SPI using UVM/SPI_UVM/Slave env/interface_slave.sv} {1 {vlog -work work -vopt -sv -stats=none {D:/courses/Digital/Verification/Projects/Project - 3 SPI using UVM/SPI_UVM/Slave env/interface_slave.sv}
-QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
--- Compiling interface interface_slave
-
-Top level modules:
-	--none--
 
 } {} {}}
