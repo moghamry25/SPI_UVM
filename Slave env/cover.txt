@@ -1,0 +1,215 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /top_slave/DUT/sva_slave_inst
+=== Design Unit: work.sva_slave
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       1         1         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/top_slave/DUT/sva_slave_inst/assert__rst_n_assertion
+                     sva_slave.sv(17)                   0          1
+
+Directive Coverage:
+    Directives                       1         1         0   100.00%
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/top_slave/DUT/sva_slave_inst/cover__rst_n_assertion 
+                                         sva_slave Verilog  SVA  sva_slave.sv(20)   7 Covered   
+
+=================================================================================
+=== Instance: /sequence_stim_slave
+=== Design Unit: work.sequence_stim_slave
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       1         1         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/sequence_stim_slave/sequence_stim_slave/body/#ublk#51920405#23/immed__27
+                     sequence_stim_slave.sv(27)
+                                                        0          1
+
+=================================================================================
+=== Instance: /coverage_slave
+=== Design Unit: work.coverage_slave
+=================================================================================
+
+Covergroup Coverage:
+    Covergroups                      1        na        na   100.00%
+        Coverpoints/Crosses          7        na        na        na
+            Covergroup Bins         32        32         0   100.00%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /coverage_slave/coverage_slave/cov1             100.00%        100          -    Covered              
+    covered/total bins:                                    32         32          -                      
+    missing/total bins:                                     0         32          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint Covering_rx_data                       100.00%        100          -    Covered              
+        covered/total bins:                                11         11          -                      
+        missing/total bins:                                 0         11          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin data_bins[0]                                  121          1          -    Covered              
+        bin data_bins[1]                                   17          1          -    Covered              
+        bin data_bins[2]                                   30          1          -    Covered              
+        bin data_bins[3]                                    7          1          -    Covered              
+        bin data_bins[4]                                   25          1          -    Covered              
+        bin data_bins[5]                                   12          1          -    Covered              
+        bin data_bins[6]                                   10          1          -    Covered              
+        bin data_bins[7]                                    5          1          -    Covered              
+        bin data_bins[8]                                   14          1          -    Covered              
+        bin data_bins[9]                                   13          1          -    Covered              
+        bin data_bins[10]                                   4          1          -    Covered              
+    Coverpoint Covering_rx_valid                      100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin valid_bins[0]                                 985          1          -    Covered              
+        bin valid_bins[1]                                  16          1          -    Covered              
+    Coverpoint Covering_MISO                          100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin miso_bins[0]                                  993          1          -    Covered              
+        bin miso_bins[1]                                    8          1          -    Covered              
+    Coverpoint Covering_SS_n                          100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin ss_bins[0]                                    765          1          -    Covered              
+        bin ss_bins[1]                                    235          1          -    Covered              
+    Coverpoint Covering_tx_valid                      100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin tx_valid_bins[0]                              492          1          -    Covered              
+        bin tx_valid_bins[1]                              508          1          -    Covered              
+    Coverpoint Covering_tx_data                       100.00%        100          -    Covered              
+        covered/total bins:                                11         11          -                      
+        missing/total bins:                                 0         11          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin tx_data_bins[0]                                 5          1          -    Covered              
+        bin tx_data_bins[1]                                 7          1          -    Covered              
+        bin tx_data_bins[2]                                 6          1          -    Covered              
+        bin tx_data_bins[3]                                 4          1          -    Covered              
+        bin tx_data_bins[4]                                 3          1          -    Covered              
+        bin tx_data_bins[5]                                 3          1          -    Covered              
+        bin tx_data_bins[6]                                 5          1          -    Covered              
+        bin tx_data_bins[7]                                 3          1          -    Covered              
+        bin tx_data_bins[8]                                 4          1          -    Covered              
+        bin tx_data_bins[9]                                 6          1          -    Covered              
+        bin tx_data_bins[10]                                1          1          -    Covered              
+    Coverpoint Covering_rst_n                         100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin rst_bins[0]                                     7          1          -    Covered              
+        bin rst_bins[1]                                   994          1          -    Covered              
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /coverage_slave/coverage_slave/cov1             100.00%        100          -    Covered              
+    covered/total bins:                                    32         32          -                      
+    missing/total bins:                                     0         32          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint Covering_rx_data                       100.00%        100          -    Covered              
+        covered/total bins:                                11         11          -                      
+        missing/total bins:                                 0         11          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin data_bins[0]                                  121          1          -    Covered              
+        bin data_bins[1]                                   17          1          -    Covered              
+        bin data_bins[2]                                   30          1          -    Covered              
+        bin data_bins[3]                                    7          1          -    Covered              
+        bin data_bins[4]                                   25          1          -    Covered              
+        bin data_bins[5]                                   12          1          -    Covered              
+        bin data_bins[6]                                   10          1          -    Covered              
+        bin data_bins[7]                                    5          1          -    Covered              
+        bin data_bins[8]                                   14          1          -    Covered              
+        bin data_bins[9]                                   13          1          -    Covered              
+        bin data_bins[10]                                   4          1          -    Covered              
+    Coverpoint Covering_rx_valid                      100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin valid_bins[0]                                 985          1          -    Covered              
+        bin valid_bins[1]                                  16          1          -    Covered              
+    Coverpoint Covering_MISO                          100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin miso_bins[0]                                  993          1          -    Covered              
+        bin miso_bins[1]                                    8          1          -    Covered              
+    Coverpoint Covering_SS_n                          100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin ss_bins[0]                                    765          1          -    Covered              
+        bin ss_bins[1]                                    235          1          -    Covered              
+    Coverpoint Covering_tx_valid                      100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin tx_valid_bins[0]                              492          1          -    Covered              
+        bin tx_valid_bins[1]                              508          1          -    Covered              
+    Coverpoint Covering_tx_data                       100.00%        100          -    Covered              
+        covered/total bins:                                11         11          -                      
+        missing/total bins:                                 0         11          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin tx_data_bins[0]                                 5          1          -    Covered              
+        bin tx_data_bins[1]                                 7          1          -    Covered              
+        bin tx_data_bins[2]                                 6          1          -    Covered              
+        bin tx_data_bins[3]                                 4          1          -    Covered              
+        bin tx_data_bins[4]                                 3          1          -    Covered              
+        bin tx_data_bins[5]                                 3          1          -    Covered              
+        bin tx_data_bins[6]                                 5          1          -    Covered              
+        bin tx_data_bins[7]                                 3          1          -    Covered              
+        bin tx_data_bins[8]                                 4          1          -    Covered              
+        bin tx_data_bins[9]                                 6          1          -    Covered              
+        bin tx_data_bins[10]                                1          1          -    Covered              
+    Coverpoint Covering_rst_n                         100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin rst_bins[0]                                     7          1          -    Covered              
+        bin rst_bins[1]                                   994          1          -    Covered              
+
+TOTAL COVERGROUP COVERAGE: 100.00%  COVERGROUP TYPES: 1
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/top_slave/DUT/sva_slave_inst/cover__rst_n_assertion 
+                                         sva_slave Verilog  SVA  sva_slave.sv(20)   7 Covered   
+
+TOTAL DIRECTIVE COVERAGE: 100.00%  COVERS: 1
+
+ASSERTION RESULTS:
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/top_slave/DUT/sva_slave_inst/assert__rst_n_assertion
+                     sva_slave.sv(17)                   0          1
+/sequence_stim_slave/sequence_stim_slave/body/#ublk#51920405#23/immed__27
+                     sequence_stim_slave.sv(27)
+                                                        0          1
+
+Total Coverage By Instance (filtered view): 100.00%
+
