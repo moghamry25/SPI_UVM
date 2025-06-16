@@ -23,8 +23,6 @@ module sva_ram(
     tx_vaild_for_first_three_cases: assert property (tx_vaildd) else $error("Assertion tx_vaild_for_first_three_cases failed!");
      cover property (tx_vaildd);
 
-    
-
     property tx_vaild_pp;
         @(posedge clk) disable iff(!rst_n) (datain[9:8]==(2'b11)&& rx_valid) |=> (tx_valid);
     endproperty
@@ -32,6 +30,6 @@ module sva_ram(
     tx_vaild_for_last_case: assert property (tx_vaild_pp) else $error("Assertion tx_vaild_pp failed!");
      cover property (tx_vaild_pp);
 
-    
+
     
 endmodule
